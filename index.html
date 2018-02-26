@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- xlsx.js (C) 2013-present  SheetJS http://sheetjs.com -->
+<!-- vim: set ts=2: -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Data Upload</title>
+<style>
+#drop{
+	border:2px dashed #bbb;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	padding:25px;
+	text-align:center;
+	font:20pt bold,"Vollkorn";color:#bbb
+}
+a { text-decoration: none }
+</style>
+</head>
+<body>
+<pre>
+<br />
+<button id="readf">Click here to select a file from your computer</button><br />
+<div id="drop">Drop a spreadsheet file here to see sheet data</div>
+<input type="file" name="xlfile" id="xlf" /> ... or click here to select a file
+</pre>
+<p><input type="submit" value="Export Data!" id="xport" onclick="export_xlsx();"></p>
+<div id="htmlout"></div>
+<br />
+<script src="index.js"></script>
+</body>
+</html>
